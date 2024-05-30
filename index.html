@@ -1,0 +1,83 @@
+<html>
+    <head>
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/main.css">
+    </head>
+<body>
+    
+    
+<div class="w-75 py-4 mx-auto">
+    <h3 class="py-3 fw-bolder">Product Management System</h3>
+    <label for="productNameInput">productName :</label>  <!--الليبل بيبقا فيها فور بيتربط بالاي دي بتاع الانبوت-->
+    <input type="text" id="productNameInput" class="form-control mb-2" >  <!--خدت المكتوب في الفور وحطيته في الاي دي-->
+    
+    <label for="producPriceInput">productPrice :</label>
+    <input type="number" id="productPriceInput" class="form-control mb-2" >
+
+    <label for="productCategoryInput">productCategory :</label>
+    <input type="text" id="productCategoryInput" class="form-control mb-2" >
+
+    <label for="productDescriptionInput">productDescription :</label>
+    <textarea type="text" id="productDescriptionInput" class="form-control mb-2" ></textarea>
+
+    <button onclick=" addProduct(); " class="btn btn-outline-info">Add Product</button>
+
+</div>    
+<!--ده الجدول اللي هعرض فيه البيانات اللي هدخلها-->
+<div class="w-75 mx-auto py-5">
+    <input oninput="searchProduct(this.value)" type="text" class="form-control w-75 mx-auto"> <!--اون انبوت معناها لما المستخدم يدخل اي حرف هاتلي الفاليو دي واعرضها وده بيشتغل كل لما يحصل تغير سواء كتبت او مسحت او عملت اي تغيير-->
+   <!-- هكول السيرش برودكت وهبعتلها اني مع كل تغير يحصل في الانبوت اكول السيرش برودكت وابعتلها الفاليو اللي في الانبوت-->
+   <!--لما بستخدم زيس جوه ايفينت بتعود علي العنصر اللي تم عليه الايفينت -->
+   <table class="table text-center" >
+        <thead>
+<th>Index</th>            
+<th>Name</th>
+<th>Price</th>
+<th>Category</th>
+<th>Description</th>
+<th>Delete</th>
+<th>Update</th>
+        </thead>
+        <tbody id="tableBody">
+
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/index.js"></script>
+</body>
+    </html>
